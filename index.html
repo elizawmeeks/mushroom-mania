@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="MushroomApp">
+<head>
+	<title>Mushroom Mania</title>
+</head>
+<body>
+	<h1>Mushroom Mania</h1>
+
+	<div ng-view></div>
+
+<!-- Third Party JS -->
+<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
+
+<!-- App Specific -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/fb-config/fbgetter.js"></script>
+<script type="text/javascript" src="app/controllers/MushroomCtrl.js"></script>
+<script type="text/javascript" src="app/factories/MushroomFactory.js"></script>
+</body>
+</html>

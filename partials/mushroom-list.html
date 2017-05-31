@@ -1,0 +1,22 @@
+<article class="mushroom-list">
+
+  <header><h1>List of Mushrooms</h1></header>
+
+  <div>
+    <input class="mushroomSearch" type="text" ng-model="query" placeholder="search"><br>
+    <input type="radio" name="isItEdible" value="edible" ng-click="edible('edible')">Edible
+    <input type="radio" name="isItEdible" value="inedible" ng-click="edible('inedible')">Inedible
+    <input type="radio" name="isItEdible" value="all" ng-click="edible('')">All<br>
+  </div>
+
+  <section>
+
+    <div ng-repeat="item in shrooms | filter : query">
+      <strong>{{ item.name }}</strong>
+      <p>{{ item.description }}</p>
+      <p>{{ item.edible }}</p>
+    </div>
+
+  </section>
+
+</article>
